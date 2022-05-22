@@ -20,6 +20,11 @@ public class Programme {
             surface+= figure.surface();
         }
 
+        List<Comparable> comparables = new ArrayList<>();
+        comparables.add(c1);
+        comparables.add(cr);
+
+
         System.out.println("Somme : "+surface);
 
     }

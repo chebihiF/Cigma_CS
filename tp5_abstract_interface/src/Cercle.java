@@ -1,4 +1,4 @@
-public class Cercle extends FG{
+public class Cercle extends FG implements Comparable{
 
     private int rayon ;
 
@@ -14,5 +14,10 @@ public class Cercle extends FG{
     @Override
     public double perimettre() {
         return 2*Math.PI*rayon;
+    }
+
+    @Override
+    public boolean comparer(Comparable c) {
+        return (surface() > c.surface());
     }
 }
