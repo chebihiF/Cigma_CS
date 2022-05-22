@@ -10,12 +10,14 @@ public class Programme {
             int a = scanner.nextInt();
             System.out.print("b : ");
             int b = scanner.nextInt();
-            System.out.println("result is " + (a / b));
+            System.out.println("result is " + Functions.calcule(a,b));
         }catch (ArithmeticException ex1){
-            ex1.printStackTrace();
-            //System.out.println("impossible de diviser par 0");
+            //ex1.printStackTrace();
+            System.out.println("impossible de diviser par 0");
         }catch (InputMismatchException ex2){
             System.out.println("type incorrect");
+        }catch (RuntimeException ex3){
+            System.out.println(ex3.getMessage());
         }
     }
 
